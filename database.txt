@@ -1,0 +1,21 @@
+create database user;
+use user;
+select database();
+create table reg_user(
+  username varchar(100) unique primary key,
+  password_hash varchar(40),
+  phone int(10)
+);
+
+
+create database lablab;
+use lablab;
+create table reg_user(
+  username varchar(100) unique primary key,
+  password varchar(40),
+  phone int(10)
+);
+insert into reg_user values
+("Goutham","1212231",213983293),
+("Susheel","435343",464545335),
+("Vidhyadhar","4343543",4545434);
